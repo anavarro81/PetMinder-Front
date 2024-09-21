@@ -1,0 +1,82 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+
+    <main class="max-w-md mx-auto mt-10 p-6 bg-white rounded-lg shadow-xl">
+    
+        <h2 class="text-2xl font-bold mb-6"> AGENDAR SERVICIO </h2>
+<!-- FIXME: -->
+        <form action="" id='newSitForm'class="space-y-4">
+<!-- PetName -->            
+            <div>
+                <label for="petName"> Nombre de la mascota </label>
+                <input type="text" id="petName" name="petName" placeholder="Milo" class="mt-1 block w-full border">
+            </div>            
+<!-- Tipo de servicio-->
+            <div>
+                <label for="service"> Tipo de servicio </label>
+                <select name="service" id="" class="mt-1 block w-full border"> 
+                    <option value="paseo"> Paseo</option>
+                    <option value="alojamiento"> Alojamiento</option>
+                </select>
+            </div>
+<!-- Rate Type -->
+            <div>
+                <label for="rateType" > Tipo de tarifa </label>
+                <select id="" name="rateType" class="mt-1 block w-full border"> 
+                    <option value="festivo"> Festivo </option>
+                    <option value="laborable"> Laborable </option>
+                </select>
+            </div>
+
+            <div id="date-section"  class="grid grid-cols-2 gap-4">
+<!-- Start Date -->
+                <div>
+                    <label for="starDate" class="block text-sm font-medium"> Fecha de inicio</label>
+                    <input type="date" id="startDate" name="startDate" class="mt-1 block w-full border">
+                </div>
+<!-- End Date -->
+                <div>
+                    <label for="endDate" class="block text-sm font-medium"> Fecha de finalización</label>
+                    <input type="date" id="endDate" name="endDate" class="mt-1 block w-full border">
+                </div>
+
+            </div>
+
+            <div id="time-section" class="grid grid-cols-2 gap-4">
+<!-- Start Hour -->                
+                <div>
+                    <label for="starHour" class="block text-sm font-medium"> Hora de inicio</label>
+                    <input type="time" id="starHour" name="starHour" class="mt-1 block w-full border">
+                </div>
+<!-- End Hour -->                
+                <div>
+                    <label for="endHour" class="block text-sm font-medium"> Hora de inicio</label>
+                    <input type="time" id="endHour" name="endHour" class="mt-1 block w-full border">
+                </div>
+
+
+
+            </div>
+
+            <div>
+                <button type="submit" class="w-full flex justify-center text-white bg-black py-2 px-4">
+                    Agendar
+                </button>
+            </div>
+
+
+        </form>
+  
+
+</main>
+
+    <script src="./js/form.js"></script>
+
+</body>
+</html>
